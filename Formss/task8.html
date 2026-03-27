@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task7</title>
+  </head>
+  <h3>User Input Form</h3>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Particular</legend>
+
+        <label for="uname">Name:</label>
+        <input type="text" id="uname" /><br /><br />
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" /><br /><br />
+
+        <label>Gender:</label>
+        <input type="radio" id="gmale" name="gender" />
+        <label for="gmale">Male</label>
+
+        <input type="radio" id="gfemale" name="gender" />
+        <label for="gfemale">Female</label>
+        <br /><br />
+
+        <label for="age">Age:</label>
+        <select id="age">
+          <option>< 1 year old</option>
+          <option>1-10</option>
+          <option>11-20</option>
+          <option>21+</option>
+        </select>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Languages</legend>
+
+        <input type="checkbox" id="java" />
+        <label for="java">Java</label>
+
+        <input type="checkbox" id="cpp" />
+        <label for="cpp">C/C++</label>
+
+        <input type="checkbox" id="csharp" />
+        <label for="csharp">C#</label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Instruction</legend>
+
+        <textarea
+          rows="4"
+          cols="30"
+          placeholder="Enter your instruction here..."
+        ></textarea>
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="SEND" />
+      <input type="reset" value="CLEAR" />
+    </form>
+    <br />
+    <hr />
+    <h5><a href="./subindex.html">Back</a></h5>
+    <h5><a href="../index.html">Back to home</a></h5>
+  </body>
+</html>
