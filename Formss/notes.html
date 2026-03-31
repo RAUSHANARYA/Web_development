@@ -1,0 +1,86 @@
+<!-- 
+ form is for make form - take input from user and send to server
+
+ label - screen reader use this to read the form
+ input - take input from user
+
+ label and input are used together to create a form
+ 
+ * label ka for n input ka id dono same hona chahiye taki screen reader label ko input se connect kar sake
+ *  by setting name equal for all radio buttons, user can select only one option
+ * <input is self closing tag - it does not have a closing tag like <input></input>
+* select tag is used to create a dropdown list and option tag is used to create options in dropdown list
+* textarea tag is used to create a multi-line text input field
+* fliedset - sare form k bhar se ek border create karta hai
+* legend - fieldset ke borderline ek title create karta hai
+
+ HTML forms
+- Tags used in HTML forms ( <form> , <input> , <label> , etc. ) 
+- Input types ( textfield , button , radio , checkbox , file , image-button , password , date-picker  )
+- Form elements ( input , label , select , option , button , textarea , fieldset , legend )
+- NOTE :  i) By default type of <input> tag is ''text"
+                ii) (for = " ") of <label> tag should be equal to (id = " ") of <input> tag.
+               iii)  Placeholder (It gives user a hint that what should be written here , i.e. FADED TEXT)
+ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset>
+        <legend> Html dummy </legend>
+        <form>
+      <label for="Login ">Login</label>
+      <input type="text" id="Login " placeholder="Enter your name" />
+      <br />
+      <br />
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" />
+      <br />
+      <br />
+      <input type="radio" id="male" name="radio" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="radio" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="radio" />
+      <label for="other">Other</label>
+      <br />
+      <br />
+      <input type="checkbox" id="subject" />
+      <label for="subject">English </label>
+
+      <input type="checkbox" id="subject" />
+      <label for="subject">Hindi </label>
+      <br />
+      <br />
+
+      <label for="cars">Select Tag </label>
+      <select name="cars" id="cars">
+        <option value="">Select a car</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <br />
+      <br />
+      <label for="message">Text Area: </label>
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Enter your message here"
+      ></textarea>
+
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+/* 
+grid==  make dynamic table layout, you can use CSS Grid to create a responsive grid
+layout. Here's an example of how you can style the `#mainDiv` and `#subDiv`
+elements to create a dynamic table layout: 
+
+grid-template-columns: 200px 200px 200px;  we can also use grid template - auto auto auto -- this will create three columns each with a width of 200px. You can adjust the values to fit your needs.
+
+in grid == we use justify item  instead of justify centre 
+
+if we use justify content center - first we need toa dd display flex to the parent element and then we can use justify content center to center the items horizontally.
+
+text align - only work on horizontal alignment of text inside an element,  not vertical alignment &  does not affect the layout of the elements themselves.
+
+*/
+
+#mainDiv {
+    margin: 0 auto; /* Center the mainDiv horizontally */
+  background-color: lightblue;
+  width: 600px;
+  height: 500px;
+  display: inline-block;
+  border: 1px solid #000;
+
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  align-items: center;
+  justify-items: center;
+  /* column-gap: 10px; Optional: Add some space between columns */
+}
+
+.subDiv {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 1px solid #000;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

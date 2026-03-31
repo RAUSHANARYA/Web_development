@@ -1,0 +1,75 @@
+/* #mainDiv {
+    background-color: lightblue;
+    width: 600px;
+    height: 200px;
+    display: block;
+    border: 1px solid #000;
+}
+#subDiv {
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 30px;
+
+}
+#anotherDiv {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 30px;
+
+}
+#lastDiv {
+    background-color: lightyellow;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 30px;
+
+} */
+
+#mainDiv {
+    background-color: lightblue;
+    width: 600px;
+    height: 200px;
+    display: inline-block;
+    border: 1px solid #000;
+
+    /* flex properties */
+    display: flex;
+    
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+
+     /* gap is used to give space between the divs\ */
+    gap: 100px;  
+
+    justify-content: space-evenly; 
+    /* to align the divs in the center */
+
+   /* to align the divs at the baseline */   
+     align-items: center; 
+     
+    
+
+   
+}
+
+#subDiv {
+    background-color: rgb(0, 249, 0);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+   
+
+
+}

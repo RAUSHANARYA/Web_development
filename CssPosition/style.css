@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#outerbox {
+    display: flex;
+    justify-content: space-between;   /* left - center - right */
+    /* align-items: center; */
+    padding: 15px 40px;
+    background-color: aquamarine;
+     position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Center navigation */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    color: black;
+    
+}
+
+
+/* Brand */
+.brand {
+    font-size: 20px;
+ 
+}
+
+/* Right button */
+.auth button {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.low button{
+    position: fixed;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is above other content *//
+
+}

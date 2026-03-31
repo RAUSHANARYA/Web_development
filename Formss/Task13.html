@@ -1,0 +1,74 @@
+<!-- &nbsp increase the gap  between fields: 
+    mistake - Form nesting + naming + button type
+    Mistake: Form ke andar phir se form nahi banate (nested form invalid hai)
+    Submit button wrong type
+    &nbsp; → avoid
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Complex Form</h2>
+    <form>
+      <fieldset>
+        <legend>personal Information</legend>
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name " />
+        &nbsp;&nbsp;
+
+        <label for="mail"> Email: </label>
+        <input type="email" id="mail" placeholder="Enter your email " />
+        &nbsp;&nbsp;
+        <label for="phone"> Phone: </label>
+        <input type="tel" id="phone" placeholder="Enter your phone no. " />
+        &nbsp;&nbsp;
+        <label for="date"> date Of Birth: </label>
+        <input type="date" id="date" />
+        &nbsp;&nbsp;
+        <label for="check"> Gender : </label>
+
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="male" id="female" />
+        <label for="other">Other</label>
+        <input type="radio" name="male" id="Other" />
+        &nbsp;&nbsp;
+        <label for="country">country</label>
+        <select name="country" id="country">
+          <option value="india">india</option>
+          <option value="germeny">germany</option>
+          <option value="england">englsnd</option>
+        </select>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>
+          Address
+          <form action="">
+            <input type="text" name="" value="" />
+            <label for="city">City :</label>
+            <input type="text" id="city" />
+            <label for="state"> state :</label>
+            <input type="text" id="state" />
+            <label for="zipcode">ZipCode :</label>
+            <input type="number" id="zipcode" />
+          </form>
+        </legend>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Other Information</legend>
+        <label for="text1">Comment</label>
+      <textarea name="text1" id="textq" cols="30" rows="10"></textarea>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
