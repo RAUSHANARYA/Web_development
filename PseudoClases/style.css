@@ -1,0 +1,41 @@
+#button {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button style */
+#button input {
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* Hover */
+#button input:hover {
+    background-color: rgb(134, 134, 159);
+}
+
+/* Active */
+#button input:active {
+    box-shadow: 0 5px 10px gray;
+    transform: scale(0.95);
+}
+
+/* Focus (when selected using tab) */
+#button input:focus {
+    outline: 2px solid orange;
+}
+
+/* Visited (works mainly for links, but shown for knowledge) */
+#button input:visited {
+    color: white;
+}
+
+#button input:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
