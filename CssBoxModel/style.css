@@ -1,0 +1,27 @@
+/* 
+ 
+1. content - the main content 
+2.padding - the distace btw from content 
+3. margin - the ditace from web page - 
+           the distace from border 
+           Order = Top → Right → Bottom → Left
+           margin: 0 auto;   -- horinzotal centre + only left-right center
+           - top- buttom -0 , left , rght - auto 
+with * {
+    - margin -0 , padding -0 - because web page contain deault some margin n padding 
+
+
+ */
+*{margin: 0;    
+    padding: 0;
+}
+    
+h1, p{
+    background-color: blue;
+    color: white;
+    
+    width: 200px;  
+    /* margin: 300px auto  ; */
+    /* padding: 20px;  */
+    ;
+}

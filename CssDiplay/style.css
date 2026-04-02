@@ -1,0 +1,47 @@
+/* 
+block elemnt - div , nav , section , acticle , header , footer and more w
+     - block element take new line each div 
+     - default take full width from left most to right most  
+     - support custom width , height , amrdin , padding 
+
+     box size - without 
+     - padding ( 50 px left + 50 px right ) + 100px width = 200px 
+     - padding ( 50 px top + 50 px buttom ) +100px  height = 200px 
+
+     with - box size
+     - width , height  same fixed 
+     - content shirk 
+ 
+inline elemt - a , span     
+         - do not take new line- try to take same line if width avilabe
+         - do not take width , height 
+         - do not take margin - top , buttom
+         - supprot margin - left , right  
+        - support  padding 
+
+      imp- if we use 
+      display - block : the supprot all block properties  
+      display: inline-block = all properties of bloack - but in same line 
+ 
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+.div{
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    padding: 50px; 
+}
+
+span{
+    border: 1px solid black;
+     padding: 10px; 
+    margin: 50px; 
+    width: 200px;
+    height: 200px ;
+    display: inline-block;
+}
