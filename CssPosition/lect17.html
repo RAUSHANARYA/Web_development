@@ -1,0 +1,106 @@
+<!-- 
+  topic - position - relative , sticky , fixed ,absoulte , static 
+   
+   like we want that 2nd imag thoda s niche aa jaye - so we cant use without position 
+
+   -  relative property - us block of container k andr koi emelnt ho to 
+        - use modify kr skte h using 
+        - top , left , right , buttom
+        - maintain gap 
+        - work wrt to the container or block 
+
+        eg -.img2
+        position: relative;
+        top: 200px;  - ab ye top se 200px use krge or image ko niche kr dega 
+
+   - absloute postion - used the closeest ancestor like jiske div k andr ban k uske basis p absloute properte apply hote g 
+        - porties- tip left right 
+        - work wrt to closest tag , elmnet , div
+        - used for overlap
+        - not maintain gap
+   
+        eg -  img 3 - position: absolute;
+            - top: 20px;
+            - ab ye image2 jo kis img 3 k closest h uske basic pe  overlap hoga 
+            - imag 2 k top se 20 px lega  
+
+   -fixed postion - postion in fixed , if hiegth , wt , of contain chnage the 
+             - the tag content is fixed 
+             - fix in entire web page
+              eg-  position: fixed;
+                    right: 30px;
+                
+   - sticky position - act as fixed postion use as header 
+                   - when the next container come the skity position is move 
+                   - its need to declare from top =0 or anthing 
+        eg -  position: sticky;
+               top -0     
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container
+    {
+        display: flex;
+        gap: 20px;
+        border: 1px solid black;
+        height: 8000px;
+    }
+    .img2
+    {
+        position: relative;
+        top: 200px;
+        left: 100px;
+    }
+    .img3
+    {
+        position: absolute;
+        top: 200px;
+      
+    }
+    /* .img4
+    {
+    position: fixed;
+    right: 30px;
+    } */
+   .img4
+   {
+    position: sticky;
+    top: 0%;
+   }
+   .anotherContainer
+   {
+    background-color: #cb2222;
+    height: 7000px;
+   }
+</style>
+<body>
+    <div class="container">
+        <img src="../PHOTO CAUSAL .jpg" alt="image"
+        width="300px" height="300px" class="img1" border="10px"
+        >
+        <img src="../PHOTO CAUSAL .jpg" alt="image"
+        width="300px" height="300px"class="img2" border="20px"
+        >
+        <img src="../PHOTO CAUSAL .jpg" alt="image"
+        width="300px" height="300px"class="img3" border="30px" 
+        >
+        <img src="../PHOTO CAUSAL .jpg" alt="image"
+        width="300px" height="300px"class="img4"
+        border="50px">
+    </div>
+
+    <div class="anotherContainer" >
+       
+    </div>
+</body>
+</html>
