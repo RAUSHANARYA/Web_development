@@ -1,0 +1,60 @@
+/* 
+class abc
+{
+int a , float b ; 
+}  == when we need we use - abc.a or abc.c
+
+in css - 
+- we use var(-then main selctor color ) like here sugget - main color , sub color
+- here var is class 
+- var can use in any tag in css file 
+- h1{
+    color:var(--main-color);   == here var class n (- main root elemnts )
+}
+*/
+
+
+
+
+
+
+
+
+
+
+:root{
+    --main-color: rgb(255, 0, 43);
+    --sub-color: skyblue;
+    --text-color:green;
+}
+
+h1{
+   color:var(--main-color);
+
+}
+h3{
+    color:var(--sub-color);
+}
+p{
+    color: var(--text-color);
+}
+#button
+{
+    display: inline-block;
+    align-items: flex-start;
+    background-color:var(--main-color);
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+#Register
+{
+    background-color: rgb(235, 97, 235);
+    color: black;
+    width: 100px;
+    border-radius: 5px;
+    height: 50px;
+}
+th{
+    color:var(--sub-color);
+}
