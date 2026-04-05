@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <div class="Left-Header">
+      <div class="left">
         <img src="./Screenshot 2026-03-31 124934.jpg" alt="" />
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -16,7 +16,7 @@
         <a href="#">IDE</a>
         <a href="#">Contact Us</a>
       </div>
-      <div class="Right-Header">
+      <div class="right">
         <label for=""
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,24 +30,24 @@
               fill-rule="evenodd"
               d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
             /></svg
-          >+917061314563</label
+          >+918889991736</label
         >
-        <button id="Button">Student Login</button>
+        <button id="loginbutton">Student Login</button>
       </div>
     </nav>
 
     <main>
-      <div id="innerBox">
+      <div id="enquiry">
         <form action="">
           <div id="heading">
             <h1>Enquiry Form</h1>
-            <h5>
+            <p>
               Have questions or need assistance? Fill out the form below to
               connect with our team and explore your opportunities.
-            </h5>
+            </p>
           </div>
 
-          <div class="line1">
+          <div id="firstL">
             <div class="group">
               <label for="name">Personal Name*</label>
               <input type="text" id="name" placeholder="Personal Name" />
@@ -57,7 +57,7 @@
               <input type="number" id="contact" placeholder="Contact Number" />
             </div>
           </div>
-          <div class="line2">
+          <div id="secL">
             <div class="group">
               <label for="email">Email*</label>
               <input type="email" id="email" placeholder="Email" />
@@ -67,95 +67,90 @@
               <input type="text" id="quali" placeholder="Qualification" />
             </div>
           </div>
-          <div class="line3">
+          <div id="thiL">
             <div class="group">
               <label for="clg">College/School Name*</label>
               <input type="text" id="clg" placeholder="College/School Name" />
             </div>
           </div>
-          <div class="Line4">
+          <div id="fortL">
             <div class="group">
               <label for="year">Year*</label>
               <select>
                 <option value="">Year</option>
-                <option>First</option>
-                <option>Second</option>
-                <option>Third</option>
-                <option>Fourth</option>
-                <option>Passout</option>
-                <option>Other</option>
+                <option value="">First</option>
+                <option value="">Seconf</option>
+                <option value="">Third</option>
+                <option value="">Fourth</option>
+                <option value="">Passout</option>
+                <option value="">Other</option>
               </select>
             </div>
-
             <div class="group">
               <label for="branch">Branch*</label>
               <input type="text" id="branch" placeholder="Branch" />
             </div>
           </div>
-          <div id="ButtomLine">
+          <div id="lastL">
             <div id="group1">
               <p>Interested in Which Course*</p>
-
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Full Stack Web Development - Placement Oriented</span>
               </label>
-
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Data Science with Python - Placement Oriented</span>
               </label>
 
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Data Analytics with Python - Placement Oriented</span>
               </label>
-
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Business Analyst</span>
               </label>
 
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Java Programming</span>
               </label>
 
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Python Programming</span>
               </label>
 
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>C/C++ Programming</span>
               </label>
 
-              <label class="check">
+              <label class="option">
                 <input type="checkbox" />
                 <span>Other</span>
               </label>
             </div>
-
             <div id="group2">
               <p>Source of Information</p>
               <b
                 >(Only choose 'Received call from institute' if you actually got
                 a call from us)*</b
               >
-
-              <select>
-                <option>Source of Information</option>
-                <option>Newspaper</option>
-                <option>Friend/relative</option>
-                <option>Social media</option>
-                <option>Call from institute</option>
-                <option>Other</option>
+              <select name="" id="">
+                <option value="">Source of Information</option>
+                <option value="">Newspaper</option>
+                <option value="">Friend/relative</option>
+                <option value="">Social media</option>
+                <option value="">Call from institute</option>
+                  <option value="">Other</option>
               </select>
 
-              <label>Name of executive</label>
-              <select>
-                <option>Name of executive</option>
+              <label for="">Name of executive</label>
+              <select name="" id="">
+                <!-- dbt -->
+                <option value="" disabled>Name of executive</option>
               </select>
             </div>
           </div>

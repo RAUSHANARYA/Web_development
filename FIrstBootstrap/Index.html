@@ -14,10 +14,44 @@
        text-primary
         bg-danger
         btn-success      
+   
+  emphsis - for light color of any -pair of bg n color 
+        eg- primary-emphasis    
+        
+  classes - bootrasp all write inside calss not id 
 
+  class = about font 
+    
+       1."text-end" , cnetre , left  - mean text right side ho jayege , centre , right 
+       2. text- lowercase = all lowercse /  text- Captilize -  text k first letter capital / text-uppercase = text all uppercase 
+       3. for font fold (text variate) = fw-bold , fw-bolder , semi  , fw-semibold
+       4. font size = fs-1 , fs-2 , fs-3 / fs-1 more gap
+       5. display-1 (not bold ) * 2 = h1
+       6. font style - fst-itllaic
 
+       border - 
+       1. border - apply border 
+       2. border-round - round 
+       3. border thickness - border-0( 5- more thickness ) , border-1 (5 variant ) 
+        * we dont have any border style 
+        
+      rounded - 
+      1. rounder-0,1,2,3 (rounder-5 more round) 
+      2. rounded - circle  = border circle / 
+      3. rounder-top   / 
+      4. rounder-start-circle , end-circle  ( start m dega )
+      5. round
 
--->
+      shadow
+      1.shadow-lg
+
+      Margin  / padding
+        1. m / 2.direction ( s - start , e- end , t - top , b-buttom , x - (left right ) y- yaxis (top buttom)) /3 - /  4. 0-5(auto)(0-px , 1-4px npx = multiple of 4 )  _
+
+     1. m s - 0 
+ 
+      padding 
+    1. p s 
 
 <!doctype html>
 <html lang="en">
@@ -33,16 +67,33 @@
     />
   </head>
   <body>
-    <div class="bg-primary border shadow ">hello</div>
+    <!-- <div class="bg-primary border shadow">hello</div>
 
     <div class="text-success">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, tempora
       excepturi explicabo natus ad minima ea eos, sapiente nesciunt atque
       dolorum aut earum voluptatibus. Doloribus earum fugit voluptates iure
       libero.
+    </div> -->
+
+    <!-- <button type="submit" class="btn btn-info">Submit</button> -->
+
+    <div class="bg-info text-danger-emphasis my-5 mx-3 ">
+      <h1 class="text-center text-lowercase fw-semibold border border-black  border-5 py-3 " >this IS heading</h1>
+      <p class=" fs-4 fst-italic border border-danger border-5 rounded-5 rounded-end-circle  shadow-lg" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam
+        hic a quidem et blanditiis adipisci pariatur veniam debitis, iure quae
+        alias temporibus unde corporis delectus reprehenderit deleniti,
+        veritatis officiis ad tenetur. Id illum maxime illo aliquid unde vel,
+        velit eaque odio maiores blanditiis qui numquam fugit suscipit
+        distinctio expedita assumenda cupiditate sit? Veritatis ad quasi rerum
+        nisi est eaque officiis eum, voluptate sit libero quisquam porro cumque.
+        Fugiat nesciunt error, expedita excepturi obcaecati accusamus ipsum
+        perferendis, ullam aliquid inventore distinctio enim, dignissimos
+        repudiandae natus rerum culpa similique? Harum et fugiat amet nemo
+        laboriosam placeat cum error voluptatem atque id.
+      </p>
     </div>
-    
-     <button type="submit" class="btn btn-info">Submit</button>
 
     <!-- Bootstrap Script -->
     <script
