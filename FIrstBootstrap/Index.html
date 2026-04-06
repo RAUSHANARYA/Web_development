@@ -48,12 +48,22 @@
       Margin  / padding
         1. m / 2.direction ( s - start , e- end , t - top , b-buttom , x - (left right ) y- yaxis (top buttom)) /3 - /  4. 0-5(auto)(0-px , 1-4px npx = multiple of 4 )  _
 
-     1. m s - 0 
+      1. m s - 0 
  
       padding 
-    1. p s 
+      1. p s 
 
-<!doctype html>
+ ** display in bootstrap 
+
+   1. d-block , d-none , d- flex , d-grid , d- inline 
+   
+   2.d-flex = gap , flex-column , flex-column revsrs , justrify-content - start/end/around . centre ,evenly  , align-item-cneter/start/end
+   3.d-grip = gap-0--5 (cant make column) but bootstrap 
+        give class - row == tr   , td/th = .col
+
+ -->
+
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -65,22 +75,27 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- <div class="bg-primary border shadow">hello</div>
+
+ <!-- <div class="bg-primary border shadow">hello</div>
 
     <div class="text-success">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, tempora
       excepturi explicabo natus ad minima ea eos, sapiente nesciunt atque
       dolorum aut earum voluptatibus. Doloribus earum fugit voluptates iure
       libero.
-    </div> -->
+    </div>
 
-    <!-- <button type="submit" class="btn btn-info">Submit</button> -->
+    <button type="submit" class="btn btn-info">Submit</button>  -->
 
-    <div class="bg-info text-danger-emphasis my-5 mx-3 ">
-      <h1 class="text-center text-lowercase fw-semibold border border-black  border-5 py-3 " >this IS heading</h1>
-      <p class=" fs-4 fst-italic border border-danger border-5 rounded-5 rounded-end-circle  shadow-lg" >
+    <div class="bg-info text-danger-emphasis mx-3 my-3">
+      <h1 class="text-center text-lowercase fw-semibold border border-black  border-5 py-5" >this IS heading</h1>
+
+      <div class="d-flex gap-5 justify-content-evenly align-items-start" id="div2">
+
+          <p class=" fs-4 fst-italic border border-danger border-5 rounded-5  shadow-lg" >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam
         hic a quidem et blanditiis adipisci pariatur veniam debitis, iure quae
         alias temporibus unde corporis delectus reprehenderit deleniti,
@@ -93,9 +108,67 @@
         repudiandae natus rerum culpa similique? Harum et fugiat amet nemo
         laboriosam placeat cum error voluptatem atque id.
       </p>
+   
+      <p class=" fs-4 fst-italic border border-danger border-5 rounded-5  shadow-lg" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam
+        hic a quidem et blanditiis adipisci pariatur veniam debitis, iure quae
+        alias temporibus unde corporis delectus reprehenderit deleniti,
+        veritatis officiis ad tenetur. Id illum maxime illo aliquid unde vel,
+        velit eaque odio maiores blanditiis qui numquam fugit suscipit
+        distinctio expedita assumenda cupiditate sit? Veritatis ad quasi rerum
+        nisi est eaque officiis eum, voluptate sit libero quisquam porro cumque.
+        Fugiat nesciunt error, expedita excepturi obcaecati accusamus ipsum
+        perferendis, ullam aliquid inventore distinctio enim, dignissimos
+        repudiandae natus rerum culpa similique? Harum et fugiat amet nemo
+        laboriosam placeat cum error voluptatem atque id.
+      </p>
+ 
+      <p class=" fs-4 fst-italic border border-danger border-5 rounded-5 shadow-lg" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam
+        hic a quidem et blanditiis adipisci pariatur veniam debitis, iure quae
+        alias temporibus unde corporis delectus reprehenderit deleniti,
+        veritatis officiis ad tenetur. Id illum maxime illo aliquid unde vel,
+        velit eaque odio maiores blanditiis qui numquam fugit suscipit
+        distinctio expedita assumenda cupiditate sit? Veritatis ad quasi rerum
+        nisi est eaque officiis eum, voluptate sit libero quisquam porro cumque.
+        Fugiat nesciunt error, expedita excepturi obcaecati accusamus ipsum
+        perferendis, ullam aliquid inventore distinctio enim, dignissimos
+        repudiandae natus rerum culpa similique? Harum et fugiat amet nemo
+        laboriosam placeat cum error voluptatem atque id.
+      </p>
+   
+      <p class=" fs-4 fst-italic border border-danger border-5 rounded-5  shadow-lg" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam
+        hic a quidem et blanditiis adipisci pariatur veniam debitis, iure quae
+        alias temporibus unde corporis delectus reprehenderit deleniti,
+        veritatis officiis ad tenetur. Id illum maxime illo aliquid unde vel,
+        velit eaque odio maiores blanditiis qui numquam fugit suscipit
+        distinctio expedita assumenda cupiditate sit? Veritatis ad quasi rerum
+        nisi est eaque officiis eum, voluptate sit libero quisquam porro cumque.
+        Fugiat nesciunt error, expedita excepturi obcaecati accusamus ipsum
+        perferendis, ullam aliquid inventore distinctio enim, dignissimos
+        repudiandae natus rerum culpa similique? Harum et fugiat amet nemo
+        laboriosam placeat cum error voluptatem atque id.
+      </p>
+    
+      <p class=" fs-4 fst-italic border border-danger border-5 rounded-5 shadow-lg" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam
+        hic a quidem et blanditiis adipisci pariatur veniam debitis, iure quae
+        alias temporibus unde corporis delectus reprehenderit deleniti,
+        veritatis officiis ad tenetur. Id illum maxime illo aliquid unde vel,
+        velit eaque odio maiores blanditiis qui numquam fugit suscipit
+        distinctio expedita assumenda cupiditate sit? Veritatis ad quasi rerum
+        nisi est eaque officiis eum, voluptate sit libero quisquam porro cumque.
+        Fugiat nesciunt error, expedita excepturi obcaecati accusamus ipsum
+        perferendis, ullam aliquid inventore distinctio enim, dignissimos
+        repudiandae natus rerum culpa similique? Harum et fugiat amet nemo
+        laboriosam placeat cum error voluptatem atque id.
+      </p>
+      </div>
+    
     </div>
-
-    <!-- Bootstrap Script -->
+<!-- 
+      Bootstrap Script  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

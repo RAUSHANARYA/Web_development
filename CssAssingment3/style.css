@@ -11,6 +11,7 @@ body {
 nav {
   background-color: white;
   width: 100%;
+
   position: sticky;
   top: 0;
   display: flex;
@@ -47,7 +48,7 @@ nav {
 }
 
 #loginbutton {
-  background-color: #0088d7;
+  background-color: #2597d9;
   width: fit-content;
   height: 50px;
   font-size: 18px;
@@ -56,7 +57,7 @@ nav {
   margin: 10px;
   border-radius: 10px;
   border: none;
-  box-shadow: 7px 7px 3px 0 #3981ab;
+  box-shadow: 7px 7px 3px 0 #002941;
 }
 
 #enquiry {
