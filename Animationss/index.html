@@ -1,10 +1,39 @@
-<!-- 
+ <!-- 
  
 trnasition - move intial to final 
 eg- a box a 0km move to 5km 
 
+need
+ -  postion itinialize to use property top left 
+ - animation name - sv 
+ - animation : idenfier name duartin function delay 
+ - property 
+   
+            animation-name: right;
+            position: relative;
+            animation-duration: 5s;
+            animation-timing-function:ease-in;
+            animation-iteration-count :3;
+            animation-direction:alternate;
+            animation-fill-mode: forwards;  3 bar move hoke ruk jaye forwad m 
+            animation-play-state:running;  running mode m rhega 
+   outside div 
+   use @ keyframe indefier name 
+   { 
+      // from  - to
+      0%{
+      top - 0px 
+      left -0px
+      }
+      10% 
+      {
+      }
+   }
 
-transition : property  duration  timing_frunction  delay
+   topic : transtion  lect 24 , date 12/04
+
+use traistion in div - source to destionation 
+transition : property   duration  timing_frunction  delay
 eg - transition: width 5s ease-out 1s; 
 
 timing_funtion = linear , ease-in , ease-out , ease-in-out
@@ -12,7 +41,27 @@ timing_funtion = linear , ease-in , ease-out , ease-in-out
 
 delay - start m rukegea 2s , 1s jista time dalo 
 
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+
+tansition work by use of hover ( psudedo calss   (:hover, :active, :focus, or :checked).)
+  
+transition- property : width /all / height 
+so we use hover in width
+
+change multiple property 
+div {
+  transition: width 2s, height 4s, background-color 3s;
+}
+
+
 ====
+lect -24 topic transform date 12-04
+transform 
+apply by the use of pseudo calss , hove =r , active
+transform: none|transform-functions|initial|inherit;
 
 1. translate()-X,Y
 Used to move an element from its original position.

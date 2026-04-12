@@ -6,14 +6,15 @@
     overflow: hidden;
     text-wrap-mode: nowrap ;
     color: rgb(28, 231, 238);
-     transition: width 5s  linear,
-                  color 2s linear; 
-    
+     /* transition: width 5s  linear,
+                  color 2s linear;  */
+     transition:  width 2s, height 4s, background-color 3s ;
 }
 
 #div1:hover
 {
-    width: 500px;
+    width: 300px;
+    height: 400px;
     color: blue;  
    
 }
@@ -33,9 +34,10 @@
 }
 
 /* correct id */
-#div2:hover {
+#div2:hover { 
     /* transform: rotateZ(3600deg); */
     /* transform: scale(1.5); */
     /* transform: skewX(45deg); */
+    transform: translate(500px);
   
 }

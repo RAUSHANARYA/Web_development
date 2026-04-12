@@ -1,0 +1,117 @@
+ <!-- topic - flex board lec-20 , date -08 /04 -->
+
+ <!-- Flex
+    
+   display flex by deafult sare div rows m hi bnate h 
+   but we have
+    --  flex-direction : colum , row , rowrevserse - to change 
+    -- flex-direction row - main axis - x axis 
+      flex-direction colum - main axis - y axis 
+
+  
+    flex-wrap = agr size h to wo ek div m rhega bhr ni jayega 
+     - deafult - no-wrap , wrap , wrap-revserse 
+     - eg- flex-wrap-:wrap 
+    
+    justify-content - main axis k through apna contnt adjust krna h 
+    justify content : ceter - main axis k cntre m cala ayega with no gao 
+                - space btw - 1 n last div egde a chipke hoge bich m gap hoga 
+                - space around - left n right m  space bange wo bich m v
+                - space evenly - evenly space divide 
+                
+    align-item = work as vertically   == if flex-direct - row   
+               = center , start , end  
+               justify content n align item -centre the whole centre row wsise n colum sise         
+                
+    align-content: center; = work for intenalyy content - veritically            
+                when we use flex-wrap for multiple div - its create gap btw div
+                to avoid gap we use 
+                align content - start - fr bilkul chipak jayeg sare div 
+                
+    order - order: 500 
+         - order change the property of div box - like box 1 1st m h order 5 kr doge to wo 5 m chale jayege 
+
+
+
+                -->
+     
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            flex-wrap:wrap;
+            /* /* justify-content: center; */
+             align-items: start; 
+            align-content: start;
+          
+        }
+        .box{
+            height: 200px;
+            width:200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+            order: 4;
+            /* flex-shrink: 4; */
+            /* flex-grow: 1; */
+            /* align-self: end; */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            
+        }
+        #box2{
+            background-color: blue;
+            /* flex-grow: 1; */
+        }
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+        }
+        #box4{
+            background-color: brown;
+            /* order: -1; */
+            /* flex-grow: 1; */
+            /* flex-basis: 400px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>

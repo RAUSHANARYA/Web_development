@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            background-color: bisque;
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        .box
+        {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 5px;
+            animation-name: right;
+            position: relative;
+            /* animation-duration: 5s;
+            animation-timing-function:ease-in;
+            animatio-dealy:0s;
+            animation-iteration-count :3;
+            animation-direction:alternate;
+            animation-fill-mode: forwards;
+            animation-play-state:running; */
+            
+
+           /* @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s ease-in 0s 3 alternate forwards running right;
+            
+        }
+        .box2
+        {
+           background-color: rgb(94, 223, 79);
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            box-shadow: 1px 1px 5px;
+            animation-name: box;
+            position: relative;  
+            animation: 5s ease-in 0s 3 reverse forwards running left;
+        }
+        @keyframes right 
+        {
+           0% {
+                top: 0px;
+                left: 0px;
+            }
+
+           
+
+            100% {
+                top: 0px;
+                left: 90%;
+            } 
+        }
+         @keyframes left 
+        {
+           0% {
+                top: 70%;
+                left: 0% ;
+            }
+
+           
+
+            100% {
+                top: 70%;
+                left: 90%;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            1
+        </div>
+        <div class="box2">
+            1
+        </div>
+    </div>
+</body>
+</html>

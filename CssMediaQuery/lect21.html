@@ -1,0 +1,128 @@
+<!-- 
+  topic - media query , lect -21 , date 12/04
+
+  media querie 
+   - differnt display size k ly hum alg alg css or px set krte h 
+     like for phone , tablet 
+
+   use as 
+   @media screen and ( min-widht : 500px ) and (max-width:1200px )
+   {
+    css apply 
+   }
+  and: This keyword combines a media-type and one or more media-features.
+
+    @media  (min-width: 480px) {  // after 480 px like 500px color will be green
+  .box {
+    background-color: lightgreen;
+  }
+}
+
+
+
+
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: aqua;
+        border: 1px solid black;
+        height: 400px;
+        width: 400px;
+      }
+      /* @media  (min-width: 480px) {
+       .box {
+        background-color: lightgreen;
+      }
+     } */
+
+      /* @media screen and (min-width: 0px) and (max-width: 1280px) {
+        .container {
+          
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100vh;
+          gap: 20px;
+        }
+         .box
+        {
+            background-color: rgb(180, 255, 220);
+        }
+      }
+      @media  (min-width: 1200px)  {
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          height: 100vh;
+        
+        }
+        .box
+        {
+            background-color: blue;
+        }
+      } */
+
+      @media screen and (min-width: 0px) and (max-width: 1280px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100vh;
+          gap: 20px;
+        }
+        .box {
+          background-color: rgb(180, 255, 220);
+        }
+      }
+      @media (min-width: 1200px) {
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+         
+          background-color: rgb(154, 244, 244);
+
+        }
+        .boxcontainer {
+          margin: 100px;
+          margin-left: 10%;
+          padding: 30px;
+          background-color: blue;
+        }
+        img {
+          height: 500px;
+          width: 500px;
+        }
+        .img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="boxcontainer">
+      <div class="box">hello</div>
+      <div class="box">hello</div>
+      </div>
+    </div>
+    <div class="img">
+      <img
+        src="https://imgs.search.brave.com/Stv-xXwlnxDGLeQ7b2ExWzlpN55jj78vXHPTNezqnp8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTA4/NTM1ODIvcGV4ZWxz/LXBob3RvLTEwODUz/NTgyLmpwZWc_YXV0/bz1jb21wcmVzcyZj/cz10aW55c3JnYiZk/cHI9MSZ3PTUwMA"
+        alt=" flower "
+      />
+    </div>
+  </body>
+</html>
