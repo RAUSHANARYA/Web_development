@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background: #2a7b9b;
+        background: linear-gradient(
+          223deg,
+          rgba(42, 123, 155, 1) 0%,
+          rgba(122, 235, 169, 1) 100%
+        );
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .card {
+        height: 70%;
+        width: 20%;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        overflow: hidden;
+      }
+      .card .image {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+      img {
+        width: 96%;
+        max-height: 350px;
+        border-radius: 5px;
+      }
+      .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* position: relative; */
+      }
+      .content h3 {
+        /* margin-top: 80%; */
+        position: absolute;
+        bottom: 120px;
+        /* left: 10px; */
+        font-size: 1.3rem;
+         text-align: center;
+          padding: 5px;
+       margin: 5px;
+       line-height: 30px;
+      }
+      p {
+        padding: 5px;
+        position: absolute;
+        bottom: 30px;
+        /* left: 10px; */
+        text-align: center;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://i.pinimg.com/originals/64/db/a5/64dba5add32d2741db80c7ea11846318.jpg"
+            alt="image"
+          />
+        </div>
+        <div class="content">
+          <h3>Weakest Hunter of All Mankind</h3>
+          <p>
+            who transforms into the world's strongest hunter fter surviving a
+            deadly, hidden dungeon, he acquires a unique "System" ability that
+            allows him to level up, eventually becoming the powerful Shadow
+            Monarch
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
