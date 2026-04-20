@@ -18,6 +18,11 @@ let - use for decalration
 const 
     - const pi = 3.2 = means fixed   
 
+operator = 5 type
+
+    == - compare value  a==b true
+    === - comapre value+datatype ( strict) 
+        - eg a===b - false 
 */
 
 
@@ -25,7 +30,7 @@ const
 console.log("hello world");
 console.log("hello world gandu ");
 
-let a = 10;
+let a = 10;   
 let b = '10';
 
 console.log(a===b);
