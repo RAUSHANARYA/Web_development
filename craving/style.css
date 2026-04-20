@@ -1,0 +1,366 @@
+/* .a .b → b inside a (child/descendant)
+.a.b → same element has both classes */
+
+:root {
+  --color-primary:          #c2410c;  /* Brand orange-red */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Muted gray text */
+  --color-neutral:          #3f3f46;  /* Dark sections (footer, bars) */
+  --color-neutral-content:  #f4f4f5;  /* Text on dark backgrounds */
+  --color-base-100:         #fff8f1;  /* Warm white page background */
+  --color-base-200:         #f5ede5;  /* Slightly darker warm white */
+  --color-base-300:         #e7d9c9;  /* Borders and dividers */
+  --color-base-content:     #2d1b10;  /* Default dark text */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
+
+.bg-primary-custom
+{
+    background-color: var(--color-primary);
+}
+
+.text-primary-custom
+{
+    color: var(--color-primary) !important;
+}
+
+.nav_height
+{
+    height: 44px;
+}
+
+.logo img
+{
+    height: 40px;
+    width: 70px;
+    object-fit: contain;
+}
+
+/* bootstrap btn has its own font size we need to overwrite it */
+.buttons .btn
+{
+    font-size: 12px;
+}
+
+button.login
+{
+    border: none;
+}
+
+button.login:hover{
+    border: 1px solid white;
+}
+
+.btn.register:hover
+{
+    background-color: var(--color-primary) !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.imgpart img
+{
+    height: 65vh;
+}
+
+.textpart {
+  min-height: 50vh ;
+}
+
+.textpart
+{
+    margin-top: 70px;
+}
+
+.textpart
+{
+    margin: 0 auto;
+    line-height: 35px;
+}
+
+.btns .btn.signup
+{
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.btns .btn.signup:hover
+{
+    opacity: 0.9;
+}
+
+.btns .btn.ordernow
+{
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.btns .btn.ordernow:hover
+{
+    opacity: 0.9;
+}
+
+.custom-btn-w1
+{
+    width: 80px;
+    height: 35px;
+}
+
+.custom-btn-w2
+{
+    width: 90px;
+    height: 35px;
+}
+
+.custom-i
+{
+    size: 50px;
+    color: black;
+    background-color: transparent;
+}
+
+.inputbox
+{
+    height: 30px;
+}
+
+.custom-searchbar
+{
+    font-size: 10px;
+}
+
+
+    /* bodyy {
+      background: linear-gradient(90deg, #de83b3, #ff6666);
+      min-height: 100vh;
+    } */
+
+   .card-res {
+      width: 280px;
+      height: 340px;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 0.3s ease;
+      margin-right: 30px;
+    }
+
+    .card-res:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .card-res img {
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .rating {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #b74b11;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .tags {
+      background: #e6e1db;
+      padding: 5px ;
+      border-radius: 6px;
+      font-size: 11px;
+      margin-top: 10px;
+      gap: 5px;
+     
+    }
+
+    .btn-custom {
+      background-color: #c2410c !important;
+      color: white !important;
+      height: 35px;
+      width: 60px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+    }
+
+    .btn-custom:hover {
+      background: #d76d33;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.res
+{
+     display: flex;
+    justify-content: center; 
+    align-items: start; 
+    height: 75vh;
+    background: #f04400;
+background: linear-gradient(180deg, rgba(240, 68, 0, 1) 0%, rgba(232, 147, 114, 1) 50%, rgba(250, 247, 247, 1) 100%);
+}
+
+.custom-font
+{
+   color: white;
+}
+
+.card
+{
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    margin-right: 50px;
+    
+}
+
+.inner-container {
+    width: 70%; 
+    /* background-color: rgba(0, 123, 255, 0.9);  */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left; 
+}
+
+.customer
+{
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.bg
+{
+    
+    background-color: #fff6f6;
+}
+
+.c
+{
+    width: 40px;
+    height: 170px;
+    margin-right: 20px;
+
+}
+
+.c:hover
+{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.text-color
+{
+     color: #E84393;
+}
+
+.fs
+{
+    font-size: 12px;
+}
+
+.sapn1
+{
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-primary);
+    text-align: center;
+    align-content: center;
+    color: #fff6f6;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.span2
+{
+    height: 25px;
+    width: 25px;
+    background-color: #E84393;
+    text-align: center;
+    align-content: center;
+    color: #fff6ff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.partner
+{
+    color: white;
+    height: 30vh;
+
+    .btn
+    {
+        height: 30px !important;
+        font-size: 12px;
+        color: #c2410c;
+    }
+}
+
+footer
+{
+    background-color: #414141;
+}
+
+.cravings-footer .foot {
+      text-align:center;
+      padding-bottom:28px;
+      color:#fff;
+    }
+    .cravings-footer h6 {
+      color:#fff;
+      font-weight:700;
+      margin-bottom:16px;
+    }
+    .cravings-footer ul {
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .cravings-footer ul li { margin-bottom:8px; }
+    .cravings-footer a {
+      color:#d7d7d7;
+      text-decoration:none;
+    }
+    .cravings-footer a:hover 
+    { 
+        color:#c2410c;
+    }
+
+    .footer-logo {
+      width:110px;
+      height:110px;
+      background:#fff;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .footer-logo img { max-width:80%; }
+
+    .footer-bottom {
+      border-top:1px solid #555;
+      margin-top:30px;
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+      color:#fff;
+    }
+    .footer-bottom .links a
+     { 
+        margin-left:22px;
+     }
