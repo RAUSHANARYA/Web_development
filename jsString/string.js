@@ -14,7 +14,10 @@ String Concatenation
             -  concat() method is beneficial when you need to concatenate multiple strings
 
 
-
+slice(start, end)
+substring(start, end)
+substr(start, length)
+substring() is similar to slice().
 
 
 
@@ -107,6 +110,8 @@ console.log(6 / 2);
 // let y = 88;
 // console.log(x + y);
 
+
+
 let x = 1; 
 let y = 2.6;  
 let z = "2 + 3i";
@@ -114,3 +119,10 @@ let z = "2 + 3i";
 console.log(typeof x);
 console.log(typeof y);
 console.log(typeof z);
+
+
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7, 12);
+
+let texts = "Hello world, welcome to the universe.";
+text.includes("world", 12);
