@@ -48,3 +48,53 @@ greet();
 function greet() {  // only function declaration 
     console.log("Hello");
 }
+
+// Q1. Factorial Function
+function factorial(n)
+{
+  if(n==1) return 1;
+    return n*factorial(n-1);
+}
+let ans = factorial(5);
+console.log(ans);
+
+// Q2. Reverse Number
+   
+function reverseNum(num)
+{
+     let rev = 0;
+
+    while(num > 0)
+    {
+        let digit = num % 10;
+        rev = rev * 10 + digit;
+        num = Math.floor(num / 10);
+    }
+
+    return rev;
+
+}
+let anss = reverseNum(1234);
+console.log(anss);
+
+//Q3. Palindrome Number
+
+function palindrome (n)
+{
+    let arr = n.toString().split("").map(Number);
+    let left =0;
+    let right = arr.length-1;
+    while(left<right)
+    {
+         if(arr[left] != arr[right])
+         {
+          console.log("Not palindrome");
+          return ;
+         }
+        left++;
+        right--;
+    }
+     console.log("palindrome");
+}
+let n = 2321;
+palindrome(n);
