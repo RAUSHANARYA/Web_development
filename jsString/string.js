@@ -126,3 +126,7 @@ let part = text.slice(7, 12);
 
 let texts = "Hello world, welcome to the universe.";
 text.includes("world", 12);
+
+let tree = "mango";
+console.log(tree);
+
