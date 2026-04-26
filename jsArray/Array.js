@@ -60,10 +60,15 @@ for (let i = 0; i < arr.length; i++) {
 
 arr.forEach(function(val)
 {
-    console.log(val); 
+    console.log(val);
 });
 
 arr2.forEach(function(i)
 {
    console.log(i);
 });
+arr3.forEach(function(i)
+{
+   console.log(i);
+});
+console.log("java");
