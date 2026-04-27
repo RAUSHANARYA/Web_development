@@ -67,8 +67,21 @@ arr2.forEach(function(i)
 {
    console.log(i);
 });
+let arr3 = [1,2,3,4];
 arr3.forEach(function(i)
 {
    console.log(i);
 });
 console.log("java");
+
+let brr = [1, 2, 3];
+
+let newArr = brr.map(x => x * 2);
+
+console.log(newArr); // [2,4,6]
+
+let arr44 = [1, 2, 3, 4, 5];
+
+let even = arr4.filter(x => x % 2 === 0);
+
+console.log(even); // [2,4]
