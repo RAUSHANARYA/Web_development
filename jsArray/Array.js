@@ -85,3 +85,9 @@ let arr44 = [1, 2, 3, 4, 5];
 let even = arr4.filter(x => x % 2 === 0);
 
 console.log(even); // [2,4]
+
+let aa4 = [1, 2, 3, 4, 5];
+
+let odd = aa4.filter(x => x % 2 !== 0);
+
+console.log(odd); // [2,4]
