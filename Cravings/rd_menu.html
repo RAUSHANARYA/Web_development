@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=hello, initial-scale=1.0">
+    <title>Document</title>
+     <!-- csslink -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap_icon --> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!-- Inter_font -->
+    <link
+      rel="stylesheet"
+      href=" https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+</head>
+<body>
+    
+<nav>
+      <div
+        class="containe bg-primary-custom d-flex align-items-center justify-content-between w-100 nav_height py-4"
+      >
+        <div class="logo object-fit-contain px-4">
+          <a href="./index.html"></a>
+          <img src="./img/image.png" alt="" />
+        </div>
+        <div class="buttons px-5 d-flex gap-3">
+           <a href="./login.html" class="login btn text-light py-2 px-3">Login</a>
+          <a href="./signup.html" class="register btn bg-light text-primary-custom"> Register</a>
+        </div>
+      </div>
+</nav>
+
+    <!-- restaurent info -->
+     <div class="info-containerr w-100 ">
+        <div class="inner-box d-flex flex-column mx-auto ">
+            <a href="./order.html" class="backto text-decoration-none d-block mb-2">
+            ← Back to restaurants
+            </a>
+            <div class="d-flex flex-row align-items-start">
+                <div>
+                <img src="./img/raj drabar.jpg" alt="" class="mx-4 my-1">
+                </div>
+                <div class="res-info my-2 fs">
+                    <b class="fs-5 ">Raj Darbar</b> <br>
+                  
+                    <i class="bi bi-star-fill text-warning "></i> 4.8 (171 reviews) <br>
+                    indian, chineese, ittalian <br>
+                    <i class="bi bi-geo-alt-fill"></i> Ayodhya, Plot no 2, opposite Geet Ganesh Colony, Kokta, Bhopal <br>
+                    <i class="bi bi-clock-fill"> 09:00 - 21:00</i>
+                  
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- menu -->
+        <div class="card-container bg-light ">
+          <b><h3 class="my-4 menu-head">Menu</h3></b>
+          
+          <!-- card-1 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://plus.unsplash.com/premium_photo-1694670234085-4f38b261ce5b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Veg Noodles</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                      Stir-fried noodles with vegetables and sauces
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹180</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-2 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://images.unsplash.com/photo-1583057341912-a0df64b8da4d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Tandoori Roti</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                     Whole wheat roti cooked in tandoor
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹80</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://plus.unsplash.com/premium_photo-1726072358340-0e720a2e4864?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Masala Papad</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                     Crispy papad topped with onions and spices
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹80</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-4 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://images.unsplash.com/photo-1683533761804-5fc12be0f684?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Butter naan</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                      Soft naan topped with butter
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹70</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-5 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://plus.unsplash.com/premium_photo-1723575734758-97e6e862a670?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Kadhai Chicken</b>
+                      <span class="veg-badge mx-2 my-2">non-veg</span>
+                  </div>
+                  <p class="desc">
+                      Spicy tangy vegetable soup
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹130</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-6 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://images.unsplash.com/photo-1680359873943-fe4eeafcd9b8?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Dal Makhani</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                      Creamy black lentils cooked overnight
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹260</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-7 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://plus.unsplash.com/premium_photo-1726072358340-0e720a2e4864?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Masala Papad</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                     Crispy papad topped with onions and spices
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹80</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-8 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://images.unsplash.com/photo-1592909572567-9b6d34170971?q=80&w=694&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Sevaiya Kheer</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                      Sweet vermicelli dessert with milk
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹140</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-9 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Kadhai Paneer</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                      Paneer cooked with capsicum and spices
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹270</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+
+          <!-- card-10 -->
+          <div class="menu-card d-flex flex-row align-items-center">
+              <img src="https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="food-img">
+
+              <div class="food-info fs">
+                  <div class="title-row d-flex flex-row">
+                      <b class="fs-6 my-2">Palak Paneer</b>
+                      <span class="veg-badge mx-2 my-2">veg</span>
+                  </div>
+                  <p class="desc">
+                      Paneer in spinach gravy
+                  </p>
+              </div>
+
+              <div class="price-button d-flex flex-column ">
+                  <b class="price text-primary-custom fs-5">₹260</b> <br>
+                  <button class="bg-primary-custom text-light">+ Add</button>
+              </div>
+          </div>
+    </div>
+
+
+
+
+
+
+
+
+
+     <footer class="cravings-footer fs py-3 ">
+              <div class="container">
+
+                <div class="foot">
+                  <p class="mb-0">--- Your favorite food delivery platform connecting customers with restaurants and riders. ---</p>
+                </div>
+
+                <div class="row align-items-start g-4">
+                  <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start">
+                    <div class="footer-logo">
+                      <img src="./img/image.png" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-2">
+                    <h6>Quick Links</h6>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Order Now</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <h6>For Restaurants</h6>
+                    <ul>
+                      <li><a href="#">Partner With Us</a></li>
+                      <li><a href="#">Restaurant Dashboard</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-6 col-md-2">
+                    <h6>For Riders</h6>
+                    <ul>
+                      <li><a href="#">Become a Rider</a></li>
+                      <li><a href="#">Rider Dashboard</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-6 col-md-3">
+                    <h6>Feedback & Support</h6>
+                    <ul>
+                      <li><a href="#">Submit Feedback</a></li>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-bottom">
+                  <div>&copy; 2026 Cravings. All rights reserved.</div>
+                  <div class="links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Site Map</a>
+                  </div>
+                </div>
+
+              </div>
+          </footer>
+
+
+           <!-- BootStrap Script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

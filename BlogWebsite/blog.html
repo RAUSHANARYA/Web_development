@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: wheat;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .main {
+          background-color: antiquewhite;
+          height: 100vh;
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+
+          h2,
+          p {
+            text-align: center;
+            padding: 5px;
+            margin: 10px;
+          }
+          .header {
+            margin-top: 5px;
+            background-color: chocolate;
+            height: 15%;
+            width: 90%;
+          }
+          .Allbox {
+            background-color: aqua;
+            height: 80%;
+            width: 90%;
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+
+            .box {
+              background-color: blueviolet;
+              height: 280px;   /* same height */
+              width: 92%;
+              margin: 5px;
+              border-radius: 5px;
+
+              img
+              {
+                 width: 100%;
+                height: 150px;      
+                  
+                  object-fit: cover;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h2>RAUSHAN ARYA</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint qui
+            omnis harum illum sed error.
+          </p>
+        </div>
+        <div class="Allbox">
+            <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+           <!-- box 1 -->
+          <div class="box">
+            <div class="imgg">
+                <img src="./img1.jpg" alt="">
+            </div>
+          </div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
