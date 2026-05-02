@@ -11,7 +11,7 @@
         padding: 0;
       }
       .container {
-        background-color: wheat;
+     
         height: 100vh;
         width: 100vw;
         display: flex;
@@ -19,7 +19,7 @@
         justify-content: center;
 
         .main {
-          background-color: antiquewhite;
+          
           height: 100vh;
           width: 70%;
           display: flex;
@@ -36,37 +36,104 @@
           }
           .header {
             margin-top: 5px;
-            background-color: chocolate;
+            background-color: rgb(224, 151, 244);
             height: 15%;
             width: 90%;
           }
           .Allbox {
-            background-color: aqua;
+            background-color: rgb(219, 219, 219);
             height: 80%;
             width: 90%;
             margin-bottom: 10px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 5px;
+        box-shadow: 1px 2px 5px;
+          
 
             .box {
               background-color: blueviolet;
-              height: 280px;   /* same height */
+              height: 280px; /* same height */
               width: 92%;
               margin: 5px;
               border-radius: 5px;
+              transition: transform 0.3s ease-in-out;
+              box-shadow: 1px 2px 5px;
 
-              img
+              .text{
+                      
+                      
+                       color: rgb(203, 203, 203);
+                    
+                       p{
+                        text-align:left;
+                        margin-top: 0;
+                       }
+                       h3{
+                           margin-left: 12px;
+                       }
+              }
+         
+              .footerBox
               {
-                 width: 100%;
-                height: 150px;      
-                  
-                  object-fit: cover;
+                 display: flex;
+                 flex-direction: row;
+                 padding-left: 13px;
+                margin-top: -4px;
+              
+
+                 .logo
+                 {
+               
+                  img{
+                    height: 25px;
+                    width: 25px;
+                  }
+                 }
+                 .ftext
+                 {
+                  color: rgb(207, 211, 214);
+                  padding-top: 3px;
+                padding-left: 5px;
+                  line-height: 10px;
+                 }
+
+                 button{
+                    border: 1px solid #ffffff;
+                    background: transparent;
+                    color: rgb(200, 195, 195);
+                    font-size: small;
+
+                    padding: 2px 10px;   /* side width badhegi */
+                    margin-left: 30px;
+                     margin-top: 3px;
+                    
+                    border-radius: 4px;
+                    cursor: pointer;
+              }
+
+                 button:active{
+                  background: rgb(200, 197, 197);
+                  color: rgb(0, 0, 0);
+                }
+
+             
+              }
+
+
+              img {
+                width: 100%;
+                height: 150px;
+
+                object-fit: cover;
                 border-top-right-radius: 5px;
                 border-top-left-radius: 5px;
-                
               }
             }
+            .box:hover{
+            transform: scale(1.01);
+              
+          }
           }
         }
       }
@@ -83,64 +150,221 @@
           </p>
         </div>
         <div class="Allbox">
-            <!-- box 1 -->
+          <!-- box 1 -->
           <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img1.jpg" alt="" />
             </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
           </div>
 
-           <!-- box 1 -->
+          <!-- box 1 -->
           <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img2.jpg" alt="" />
             </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
           </div>
 
-           <!-- box 1 -->
+          <!-- box 1 -->
+         <div class="box">
+            <div class="imgg">
+              <img src="./img3.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- box 1 -->
           <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img4.jpg" alt="" />
             </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
           </div>
 
-           <!-- box 1 -->
-          <div class="box">
+          <!-- box 5 -->
+        <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img5.jpg" alt="" />
             </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
           </div>
 
-           <!-- box 1 -->
-          <div class="box">
+          <!-- box 6 -->
+         <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img6.jpg" alt="" />
             </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
           </div>
 
-           <!-- box 1 -->
-          <div class="box">
+          <!-- box 7 -->
+         <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img7.jpg" alt="" />
             </div>
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
+            </div>
+
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
           </div>
 
-           <!-- box 1 -->
-          <div class="box">
+          <!-- box 8 -->
+         <div class="box">
             <div class="imgg">
-                <img src="./img1.jpg" alt="">
+              <img src="./img8.jpg" alt="" />
             </div>
-          </div>
-
-           <!-- box 1 -->
-          <div class="box">
-            <div class="imgg">
-                <img src="./img1.jpg" alt="">
+            <div class="text">
+              <h3>Rasmalai</h3>
+             <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, officia.
+             </p>
             </div>
-          </div>
 
-          
-          
+            <div class="footerBox">
+              <div class="logo">
+               <img src="./png.png" alt="">
+              </div>
+              <div class="ftext">
+                <h6>Sweet dish </h6>
+                 <h6>23 aug </h6>
+              </div>
+              <div class="button">
+                   <button type="submit">Book Now</button>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
