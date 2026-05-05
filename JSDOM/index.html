@@ -13,25 +13,53 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+     <div class="container mt-5">
 
-  <body>
-    <div class="container d-flex mt-5 gap-5">
+      <!-- Name -->
       <input
         type="text"
         id="fullName"
         placeholder="Enter your name"
-        class="form-control"
+        class="form-control mb-3"
       />
 
+      <!-- Age -->
+      <input
+        type="number"
+        id="age"
+        placeholder="Enter your age"
+        class="form-control mb-3"
+      />
 
-      <button class="btn btn-primary" onclick="Submit()">SUBMIT</button>
+      <!-- Email -->
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+        class="form-control mb-3"
+      />
+
+      <!-- Password -->
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        class="form-control mb-3"
+      />
+
+      <!-- Button -->
+      <button class="btn btn-primary" onclick="Submit()">
+        SUBMIT
+      </button>
     </div>
 
     <hr />
 
-    <div class="container border rounded shadow">
-      <span id="myData"></span>
+    <!-- Output -->
+    <div class="container border rounded shadow p-3 bg-success text-light divHide " id="data">
+      <div id="myData"></div>
     </div>
+
 
     <!-- Bootstrap Script -->
     <script
