@@ -140,3 +140,30 @@ console.log(addd(4, 6));
 const ab = (a, b) => a + b;
 
 console.log(ab(2, 3));
+
+//function maskEmail(email)
+{
+  // indexOf() → finds position of "@"
+  let index = email.indexOf("@");
+
+  // slice() → gets first character
+  let firstChar = email.slice(0,1);
+
+  // slice() → gets last character before "@"
+  let lastChar = email.slice(index - 1, index);
+
+  // repeat() → creates multiple "*"
+  let stars = "*".repeat(index - 2);
+
+  // slice() → gets domain part
+  let domain = email.slice(index);
+
+  // combine all parts
+  return firstChar + stars + lastChar + domain;
+}
+
+// email variable
+let email = "myEmail@email.com";
+
+// function call
+console.log(maskEmail(email));
