@@ -1,0 +1,12 @@
+.bulb1
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+

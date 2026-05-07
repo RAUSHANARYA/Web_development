@@ -112,7 +112,6 @@ console.log(newArr); // [2,4,6]
 let arr44 = [1, 2, 3, 4, 5];
 
 let even = arr4.filter(x => x % 2 === 0);
-
 console.log(even); // [2,4]
 
 let aa4 = [1, 2, 3, 4, 5];
