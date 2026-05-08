@@ -27,3 +27,11 @@ function changeParaColor() {
 function reset() {
   window.location.reload();
 }
+
+const developer = "Jessica";
+
+function greet() {
+  console.log("Hello, " + developer)
+}
+
+greet();
