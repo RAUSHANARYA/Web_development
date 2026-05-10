@@ -31,3 +31,11 @@ document.querySelector("form").addEventListener("reset", () => {
     console.log("form reset");
 
 });
+
+// key press
+document.addEventListener('keydown', (event) => {
+
+    let keypress = event.key;
+    console.log(keypress);
+
+});

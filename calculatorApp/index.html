@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .image1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        height: 600px;
+        width: 800px;
+        margin-top: 50px;
+      }
+
+      /* outer box */
+      .outerBox {
+        height: 400px;
+        width: 300px;
+        background-color: white;
+
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .display {
+          height: 30%;
+          width: 95%;
+          background-color: aquamarine;
+          margin: 5px;
+          border: 2px solid black;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          text-align: right;
+
+          h2{
+            padding: 10px ;
+          }
+          
+          
+        }
+
+        .buttonValues {
+          height: 70%;
+          width: 89%;
+          background-color: pink;
+          margin: 5px;
+          border: 2px solid black;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+   
+
+          display: grid;
+
+          /* 4 columns */
+          grid-template-columns: repeat(4, 1fr);
+
+          gap: 10px;
+          padding: 10px;
+
+          #operators {
+            background-color: orange;
+          }
+          #equal {
+            background-color: green;
+            color: white;
+
+            /* little rectangle style */
+            border-radius: 20px;
+
+            width: 90%;
+             grid-column: span 2;
+          }
+        }
+
+        .buttonValues button {
+          border: none;
+          border-radius: 50%;
+          font-size: 15px;
+          cursor: pointer;
+          height:45px;
+          width: 45px;
+          
+        }
+      }
+    </style>
+  </head>
+  <body>
+   <div class="container">
+
+    <div class="image1">
+
+      <img src="./CalculatorBGImage.png" alt="" />
+
+      <!-- outer box -->
+      <div class="outerBox">
+
+        <!-- display -->
+        <div class="display" id="display">
+          <h2>0</h2>
+        </div>
+
+        <!-- buttons -->
+        <div class="buttonValues">
+
+          <button onclick="Calculate('AC')">AC</button>
+          <button onclick="Calculate('C')">C</button>
+          <button onclick="Calculate('%')">%</button>
+          <button id="operators" onclick="Calculate('/')">/</button>
+
+          <button onclick="Calculate('7')">7</button>
+          <button onclick="Calculate('8')">8</button>
+          <button onclick="Calculate('9')">9</button>
+          <button id="operators" onclick="Calculate('*')">*</button>
+
+          <button onclick="Calculate('6')">6</button>
+          <button onclick="Calculate('5')">5</button>
+          <button onclick="Calculate('4')">4</button>
+          <button id="operators" onclick="Calculate('+')">+</button>
+
+          <button onclick="Calculate('3')">3</button>
+          <button onclick="Calculate('2')">2</button>
+          <button onclick="Calculate('1')">1</button>
+          <button id="operators" onclick="Calculate('-')">-</button>
+
+          <button onclick="Calculate('0')">0</button>
+          <button onclick="Calculate('.')">.</button>
+          <button id="equal" onclick="Calculate('=')">=</button>
+
+          <script src="script.js"></script>
+  </body>
+</html>
