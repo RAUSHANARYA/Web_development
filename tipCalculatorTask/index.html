@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+         *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+      .conatiner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .outerBox {
+        height: 600px;
+        width: 600px;
+        background-color: rgb(2, 2, 149);
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .tipBox {
+        color: white;
+        background-color: orange;
+        text-align: center;
+     padding-top: 10px;
+        height: 8%;
+        width: 60%;
+        margin-top: 15px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .innerBox {
+        height: 85%;
+        width: 65%;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
+      }
+       label{
+      display: block;
+      margin-top: 18px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .input-box{
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #5fa8ff;
+      margin-bottom: 20px;
+    }
+
+    input{
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .rupee{
+      margin-left: 5px;
+      font-size: 20px;
+    }
+
+    select{
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #5fa8ff;
+      outline: none;
+      background: transparent;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    button{
+      margin-top: 10px;
+      padding: 12px 30px;
+      border: none;
+      background: #43c6c6;
+      color: white;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tip
+    {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="outerBox">
+        <!-- tip -->
+        <div class="tipBox">
+          <h3>TIP CALCULATOR</h3>
+        </div>
+        <div class="innerBox">
+           <label>Bill Amount</label>
+
+      <div class="input-box">
+        <input type="number" placeholder="Amount to be paid" id="Amount">
+        <span class="rupee">₹</span>
+      </div>
+
+      <label>How was the service ?</label>
+
+    <select id="TipPercent">
+    <option value=""> Select </option>
+    
+    <option value="25">25% - Top Notch</option>
+
+    <option value="20">20% - Good</option>
+
+    <option value="10">10% - Average</option>
+
+    <option value="5">5% - Bad</option>
+</select>
+
+      <label>Total number of persons</label>
+
+      <div class="input-box">
+        <input type="number" placeholder="No. of person" id="person">
+      </div>
+
+      <button>Calculate</button>
+         <div class="tip">
+            <h3>Tip Amount </h3>
+     
+            <h3 id="amount">t</h3>
+            <h3>each</h3>
+
+         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
