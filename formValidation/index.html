@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <style>
+      span {
+        color: red;
+        font-size: 14px;
+      }
+
+      input {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input type="text" id="Fullname" placeholder="Enter your name" />
+        <span id="nameError"></span>
+      </div>
+
+      <br />
+
+      <div>
+        <input type="number" id="phone" placeholder="Enter your phone number" />
+        <span id="phoneError"></span>
+      </div>
+
+      <br />
+
+      <div>
+        <input type="email" id="email" placeholder="Enter your email" autocomplete="username"/>
+        <span id="emailError"></span>
+      </div>
+
+      <br />
+
+      <div>
+        <input
+          type="password"
+          id="password"
+          placeholder="********"
+          autocomplete="current-password"
+        />
+
+        <span id="passwordError"></span>
+      </div>
+
+      <br />
+      <button id="btn">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
