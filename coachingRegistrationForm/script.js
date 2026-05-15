@@ -1,137 +1,138 @@
-let submitBtn = document.querySelector(".submit-btn button");
-let clearBtn = document.querySelector(".clear-btn button");
+let form = document.querySelector("form");
 
-submitBtn.addEventListener("click", function (e)
+form.addEventListener("submit", (e) =>
 {
     e.preventDefault();
 
     // Inputs
-    let name = document.getElementById("name").value.trim();
+
+    let fullName = document.getElementById("name").value.trim();
+
     let email = document.getElementById("email").value.trim();
+
     let mobile = document.getElementById("number").value.trim();
+
     let dob = document.getElementById("Dob").value;
+
     let percentage = document.getElementById("Percentage").value.trim();
 
-    // Gender
-    let genderInput = document.querySelector('input[name="gender"]:checked');
+    let gender = document.querySelector('input[name="gender"]:checked');
 
-    let gender = "";
-
-    if (genderInput != null)
-    {
-        gender = genderInput.parentElement.innerText;
-    }
 
     // Regex
-    let namePattern = /^[A-Za-z ]+$/;
-    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let mobilePattern = /^[6-9][0-9]{9}$/;
 
-    // Name Validation
-    if (name === "")
+    let nameRegex = /^[A-Za-z ]+$/;
+
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let mobileRegex = /^[6-9]\d{9}$/;
+
+    let percentageRegex = /^(100|[0-9]{1,2})$/;
+
+
+    let isValid = true;
+
+
+    // Full Name Validation
+
+    if (!nameRegex.test(fullName))
     {
-        alert("Full Name is required");
-        return;
+        alert("Please enter valid full name");
+        isValid = false;
     }
 
-    if (!namePattern.test(name))
-    {
-        alert("Name should contain only letters and spaces");
-        return;
-    }
 
     // Email Validation
-    if (email === "")
+
+    if (!emailRegex.test(email))
     {
-        alert("Email is required");
-        return;
+        alert("Please enter valid email");
+        isValid = false;
     }
 
-    if (!emailPattern.test(email))
-    {
-        alert("Enter valid email address");
-        return;
-    }
 
     // Mobile Validation
-    if (mobile === "")
+
+    if (!mobileRegex.test(mobile))
     {
-        alert("Mobile number is required");
-        return;
+        alert("Enter valid 10-digit Indian mobile number");
+        isValid = false;
     }
 
-    if (!mobilePattern.test(mobile))
-    {
-        alert("Enter valid 10 digit Indian mobile number");
-        return;
-    }
 
     // DOB Validation
-    if (dob === "")
+
+    if (!validateAge(dob))
     {
-        alert("Date of Birth is required");
-        return;
+        alert("Student age must be at least 15 years");
+        isValid = false;
     }
 
-    let birthDate = new Date(dob);
-    let today = new Date();
-
-    let age = today.getFullYear() - birthDate.getFullYear();
-
-    if (age < 15)
-    {
-        alert("Student must be at least 15 years old");
-        return;
-    }
-
-    // Percentage Validation
-    if (percentage === "")
-    {
-        alert("Percentage is required");
-        return;
-    }
-
-    if (percentage < 0 || percentage > 100)
-    {
-        alert("Percentage must be between 0 to 100");
-        return;
-    }
 
     // Gender Validation
-    if (genderInput == null)
+
+    if (!gender)
     {
         alert("Please select gender");
-        return;
+        isValid = false;
     }
 
-    // Success Message
-    alert("Form Submitted Successfully");
+
+    // Percentage Validation
+
+    if (!percentageRegex.test(percentage))
+    {
+        alert("Enter valid percentage between 0-100");
+        isValid = false;
+    }
 
 
-    // Console Output
+    // Final Submit
 
-    console.log("===== STUDENT DETAILS =====");
+    if (isValid)
+    {
+        alert("Form Submitted Successfully");
 
-    console.log("Full Name :", name);
 
-    console.log("Email :", email);
+        console.log("===== STUDENT DETAILS =====");
 
-    console.log("Mobile Number :", mobile);
+        console.log("Full Name :", fullName);
 
-    console.log("Date of Birth :", dob);
+        console.log("Email :", email);
 
-    console.log("Age :", age);
+        console.log("Mobile :", mobile);
 
-    console.log("Gender :", gender);
+        console.log("Date of Birth :", dob);
 
-    console.log("Percentage :", percentage);
+        console.log("Percentage :", percentage);
+
+        console.log("Gender :", gender.parentElement.innerText);
+    }
 
 });
 
 
+
+// Age Function
+
+function validateAge(dob)
+{
+    let birthDate = new Date(dob);
+
+    let today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    return age >= 15;
+}
+
+
+
 // Clear Button
 
-clearBtn.addEventListener("click", function ()
+let clearBtn = document.querySelector(".clear-btn button");
+
+clearBtn.addEventListener("click", () =>
 {
     console.clear();
 
